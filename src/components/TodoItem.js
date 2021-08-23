@@ -2,7 +2,8 @@ import React from "react"
 
 class TodoItem extends React.Component {
   render() {
-    return <li>{this.props.todo.title}</li>
+    return <li>
+    <input type="checkbox" />{this.props.todo.title}</li>
   }
 }
 
