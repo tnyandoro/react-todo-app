@@ -4,10 +4,22 @@ class InputTodo extends Component {
   state = {
     title: "",
   };
+
+  onChange = (e) => {
+    this.setState({
+      title: e.target.value,
+    });
+  };
+
   render() {
     return (
       <form>
-        <input type="text" placeholder="Add todo..." value={this.state.title} />
+        <input
+          type="text"
+          placeholder="Add todo..."
+          value={this.state.title}
+          onChange={this.onChange}
+        />
         <button>Submit</button>
       </form>
     );
