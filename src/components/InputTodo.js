@@ -33,7 +33,7 @@ class InputTodo extends Component {
           name="title"
           onChange={this.onChange}
         />
-        <button>Submit</button>
+        <button className="input-submit">Submit</button>
       </form>
     )
   }
