@@ -5,8 +5,13 @@ import ReactDOM from "react-dom"
 // import "./App.css"
 import TodoContainer from "./functionBased/components/TodoContainer"
 import "./functionBased/App.css"
+import { BrowserRouter } from "react-router-dom"
 
-<React.StrictMode>
-  <TodoContainer />
+
+ReactDOM.render(
+  <React.StrictMode>
+  <BrowserRouter>
+    <TodoContainer />
+  </BrowserRouter>
 </React.StrictMode>
-ReactDOM.render(<TodoContainer />, document.getElementById("root"))
+  , document.getElementById("root"))
